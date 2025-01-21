@@ -5,7 +5,7 @@ Prog1::Prog1(asio::io_context& ioContext, short int port) : ioContext(ioContext)
 
 void Prog1::potok2(std::string str){
     m.lock();
-    std::cout << str << ' ' << func::calculat(str) << '\n';
+    std::cout << str << '\n';
     startConect(std::to_string(func::calculat(str)));
     m.unlock();
 }
